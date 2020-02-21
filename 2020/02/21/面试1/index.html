@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="常用命令总结, 程序员的小窝">
-    <meta name="description" content="hi 今天是我写博客的第一天，更换了最新的博客系统。
-">
+    <meta name="keywords" content="面试1, 程序员的小窝">
+    <meta name="description" content="##1、String 是最基本的数据类型吗?
+基本数据类型包括 byte、int、char、long、float、double、boolean 和 short。
+String 是引用数据类，java.lang.String类是 final ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>常用命令总结 | 程序员的小窝</title>
+    <title>面试1 | 程序员的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -241,12 +242,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">常用命令总结</h1>
+                    <h1 class="description center-align post-title">面试1</h1>
                 </div>
             </div>
         </div>
@@ -361,9 +362,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -375,7 +380,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-18
+                    2020-02-21
                 </div>
                 
 
@@ -392,7 +397,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>hi 今天是我写博客的第一天，更换了最新的博客系统。</p>
+                <p>##1、String 是最基本的数据类型吗?</p>
+<p>基本数据类型包括 byte、int、char、long、float、double、boolean 和 short。</p>
+<p>String 是引用数据类，java.lang.String类是 final  类型的，因此不可以继承这个类、不能修改这个类。为了提高效率节省空间，我们应该用</p>
+<p>StringBuffer 类</p>
+<p>##2、int 和 Integer 有什么区别？</p>
+<p>Int 是基本数据类型，不是对象，占一个内存空间，没有方法。与其同类的有 long,char,doble Integer 是封装类，具有方法及属性。与其同类的有 Long,Double.Float</p>
+<p>##3、运行时异常与一般异常有何异同？</p>
+<p>运行时异常:java JVM 抛出的异常，代码中不用处理。</p>
+<p>一般异常:用户抛出的异常，如果用 throws 声明了，调用这个方法的代码必须对其处理。</p>
+<p>##4、&amp;和&amp;&amp;的区别？</p>
+<p>&amp;:与是位运算符，能参与位运算和逻辑运算: 左边若为 false 右边还执行。</p>
+<p>&amp;&amp;:短路与,左边若为 false 右边不执行。</p>
+<p>##5、final, finally, finalize 的区别？</p>
+<p>final 用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。</p>
+<p>finally 是异常处理语句结构的一部分，表示总是执行。</p>
+<p>finalize 是 Object 类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等。算符可以用来决定某对象的类是否实现了接口。</p>
+<p>##6、heap 和 stack 有什么区别？</p>
+<p>栈是一种线形集合，其添加和删除元素的操作应在同一段完成。栈按照后进先出的方式进行处理。堆是栈的一个组成元素</p>
+<p>##7、Static Nested Class 和 Inner Class 的不同？</p>
+<p>Static Nested Class 是被声明为静态（static）的内部类，它可以不依赖于外部类实例被实例化。而通常的内部类需要在外部类实例化后才能实例化。</p>
+<p>##8、什么时候用 assert？</p>
+<p>assertion (断言)在软件开发中是一种常用的调试方式，很多开发语言中都支持这种机制。在实现中，assertion就是在程序中的一条语句，它对一个 boolean 表达式进行检查，一个正确程序必须保证这个 boolean 表达式的值为true；如果该值为 false，说明程序已经处于不正确的状态下，系统将给出警告或退出。一般来说，assertion 用于保证程序最基本、关键的正确性。assertion 检查通常在开发和测试时开启。为了提高性能，在软件发布后，assertion检查通常是关闭的。</p>
+<p>##9、GC 是什么? 为什么要有 GC?</p>
+<p>GC 是垃圾收集的意思（Gabage Collection）,内存处理是编程人员容易出现问题的地方，忘记或者错误的内存回收会导致程序或系统的不稳定甚至崩溃，Java 提供的 GC 功能可以自动监测对象是否超过作用域从而达到自动回收内存的目的，Java 语言没有提供释放已分配内存的显示操作方法。</p>
+<p>##10、short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?</p>
+<p>short s1 = 1; s1 = s1 + 1; （s1+1 运算结果是 int 型，需要强制转换类型） short s1 = 1; s1 += 1;（可以正确编译）<br>##11 继承和接口有什么区别？</p>
+<p>###抽象类：</p>
+<p>抽象类体现了数据抽象的思想，是实现多态的一种机制。它定义了一组抽象的方法，至于这组抽象方法的具体表现形式由派生类来实现。同时抽象类提供了继承的概念，它的出发点就是为了继承，否则它没有存在的任何意义。所以说定义的抽象类一定是用来继承的，同时在一个以抽象类为节点的继承关系等级链中，叶子节点一定是具体的实现类。<br>在语法方面：<br>1.由abstract关键词修饰的类称之为抽象类。<br>2.抽象类中没有实现的方法称之为抽象方法，也需要加关键字abstract。<br>3.抽象类中也可以没有抽象方法，比如HttpServlet方法。<br>4.抽象类中可以有已经实现的方法，可以定义成员变量。</p>
+<p>接口：<br>接口是用来建立类与类之间的协议，它所提供的只是一种形式，而没有具体的实现。同时实现该接口的实现类必须要实现该接口的所有方法，通过使用implements关键字。 接口是抽象类的延伸，java为了保证数据安全是不能多重继承的，也就是说继承只能存在一个父类，但是接口不同，一个类可以同时实现多个接口，不管这些接口之间有没有关系，所以接口弥补了抽象类不能多重继承的缺陷，<br>语法方面：<br>1.由interface关键词修饰的称之为接口；<br>2.接口中可以定义成员变量，但是这些成员变量默认都是public static final的常量。<br>3.接口中没有已经实现的方法，全部是抽象方法。<br>4.一个类实现某一接口，必须实现接口中定义的所有方法。<br>5.一个类可以实现多个接口。</p>
+<p>区别：<br>一.语法层次上：如上所述。<br>二.设计层次上：<br>1、 抽象层次不同。抽象类是对类抽象，而接口是对行为的抽象。抽象类是对整个类整体进行抽象，包括属性、行为，但是接口却是对类局部（行为）进行抽象。<br>2、 跨域不同。抽象类所跨域的是具有相似特点的类，而接口却可以跨域不同的类。我们知道抽象类是从子类中发现公共部分，然后泛化成抽象类，子类继承该父类即可，但是接口不同。实现它的子类可以不存在任何关系，共同之处。例如猫、狗可以抽象成一个动物类抽象类，具备叫的方法。鸟、飞机可以实现飞Fly接口，具备飞的行为，这里我们总不能将鸟、飞机共用一个父类吧！所以说抽象类所体现的是一种继承关系，要想使得继承关系合理，父类和派生类之间必须存在”is-a” 关系，即父类和派生类在概念本质上应该是相同的。对于接口则不然，并不要求接口的实现者和接口定义在概念本质上是一致的， 仅仅是实现了接口定义的契约而已,相当于是”like-a”的关系。<br>3、 设计层次不同。对于抽象类而言，它是自下而上来设计的，我们要先知道子类才能抽象出父类，而接口则不同，它根本就不需要知道子类的存在，只需要定义一个规则即可，至于什么子类、什么时候怎么实现它一概不知。比如我们只有一个猫类在这里，如果你这是就抽象成一个动物类，是不是设计有点儿过度？我们起码要有两个动物类，猫、狗在这里，我们在抽象他们的共同点形成动物抽象类吧！所以说抽象类往往都是通过重构而来的！但是接口就不同，比如说飞，我们根本就不知道会有什么东西来实现这个飞接口，怎么实现也不得而知，我们要做的就是事前定义好飞的行为接口。所以说抽象类是自底向上抽象而来的，接口是自顶向下设计出来的。</p>
+<p>附加，空接口的作用:<br>通常是作为一个标记，你比如这个Serializable、Cloneable。</p>
 
             </div>
             <hr/>
@@ -418,7 +453,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/02/18/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">http://yoursite.com/2020/02/18/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</a>
+                    <a href="http://yoursite.com/2020/02/21/%E9%9D%A2%E8%AF%951/">http://yoursite.com/2020/02/21/%E9%9D%A2%E8%AF%951/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -455,7 +490,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -619,9 +658,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/02/21/%E9%9D%A2%E8%AF%951/">
                     <div class="card-image">
@@ -641,9 +681,9 @@ String 是引用数据类，java.lang.String类是 final
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -652,6 +692,7 @@ String 是引用数据类，java.lang.String类是 final
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -670,24 +711,25 @@ String 是引用数据类，java.lang.String类是 final
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/17/hello-world/">
+                <a href="/2020/02/18/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="常用命令总结">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">常用命令总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            hi 今天是我写博客的第一天，更换了最新的博客系统。
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
                             </span>
                         <span class="publish-author">
                             
